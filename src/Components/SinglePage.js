@@ -46,24 +46,9 @@ function SinglePage() {
     }
   }
 
-  // const URL2 = `https://youtube-v31.p.rapidapi.com/videos?part=contentDetails%2Csnippet%2Cstatistics&id=${id}`
-  // const Search2 = async () => {
-  //   try {
-  //     let response = await fetch(URL2, options);
-  //     let data = await response.json();
-  //     settopvideo(data)
-  //     setloading(false)
-      
-      
-      
-  //   } catch (error) {
-      
-  //     console.log(error)
-  //   }
-  // }
-
 
   useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
     Search();
     setloading(true);
     setdislike(false);
@@ -75,16 +60,6 @@ function SinglePage() {
     setlike(false)
   }, [id])
   
-  // useEffect(()=>{
-  //   Search2();
-  // },[])
-  // console.log(topvideo)
-
-
-  
-    
-  
-  // console.log(details)
 
 ///////////////////API CALLING//////////////////////////////
 
